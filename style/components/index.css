@@ -1,0 +1,726 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Dancing+Script&display=swap');
+
+a {
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+}
+p, h1, h2, h3, h4, span {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	width: 100%;
+}
+.wrapper {
+	width: 100%;
+	position: relative;
+}
+
+.header_nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	position: absolute;
+	z-index: 10;
+}
+.header_nav_mobile {
+	display: none;
+}
+.header_top {
+	/*width: 100%;*/
+	display: flex;
+	padding: 20px 0;
+}
+
+.header_middle {
+	/*width: 70%;*/
+	display: flex;
+	justify-content: center;
+}
+.logo a {
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Dancing Script', cursive;
+	font-size: 35px;
+	font-weight: 600;
+	color: #5e3654;
+	margin-left: 40px;
+	text-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff, 2px -2px 4px #fff, -2px 2px 4px #fff;
+}
+.header_bottom {
+	/*width: 100%;*/
+	display: flex;
+	padding: 20px 0;
+	justify-content: center;
+}
+.nav_menu {
+
+}
+.nav_link {
+	font-size: 14px;
+	font-weight: 600;
+	color: #5e3654;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff, 2px -2px 4px #fff, -2px 2px 4px #fff;
+	margin-right: 30px;
+}
+.header_slider {
+	width: 100%;
+}
+.slider_item {
+	width: 100%;
+	height: 660px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	background-size: cover;
+}
+.slider_content {
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+	margin: 15% 10% 0 0;
+}
+#item1 {
+	background-image: url(../../images/75910.jpg);
+	background-position: center;
+}
+#item2 {
+	background-image: url(../../images/138650.jpg);
+}
+#item3 {
+	background-image: url(../../images/139040.jpg);
+}
+#item2 .slider_content {
+
+}
+.slider_title {
+	font-family: 'Dancing Script', cursive;
+	font-size: 50px;
+	margin-bottom: 20px;
+	color: #5e3654;
+	text-shadow: 2px 2px 4px #fff;
+}
+.text {
+	font-size: 18px;
+	color: #5e3654;
+	text-shadow: 2px 2px 4px #fff;
+}
+.button {
+	font-size: 12px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 15px 30px;
+	margin-top: 50px;
+}
+
+/*CATEGORY*/
+
+.category {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.category_item {
+	width: 20%;
+	height: 400px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	position: relative;
+	background-color: #eee5e6;
+	outline: 2px solid #fff;
+    outline-offset: -10px;
+}
+.category_item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center left;
+}
+.category_title {
+	background-color: #fff;
+	border: 2px solid #5e3654;
+	color: #5e3654;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 15px 50px;
+	margin-bottom: 30px;
+	z-index: 10;
+}
+.category_hover {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	background-color: rgba(176, 134, 139, 0.6);
+	/*background-color: #5e3654;*/
+	outline: 2px solid #fff;
+	outline-offset: -10px;
+	position: absolute;
+	opacity: 0;
+}
+.category_title:hover {
+	background-color: #5e3654;
+	color: #fff;
+	transition: 0.8s;
+}
+.category_item:hover .category_hover {
+	opacity: 1;
+	transition: 0.8s;
+
+}
+
+/*PART*/
+
+.part {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.col1 {
+	width: 40%;
+	height: 100%;
+}
+.col2 {
+	width: 60%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.part_item {
+	width: 100%;
+	height: 700px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.part_item2 {
+	width: 100%;
+	height: 300px;
+}
+.part_item3 {
+	width: 50%;
+	height: 200px;
+}
+.part_title {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(176, 134, 139, 0.6);
+	color: #5e3654;
+	text-shadow: 2px 2px 4px #ddd;
+	text-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff, 2px -2px 4px #fff, -2px 2px 4px #fff;
+	text-transform: uppercase;
+	font-size: 25px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline: 2px solid #d9c5c8;
+	outline-offset: -30px;
+	opacity: 0;
+}
+.part_item:hover .part_title {
+	opacity: 1;
+	transition: 1s;
+
+}
+#part1 {
+	background-image: url('../../images/beautiful-bride-expensive-wedding-dress_86390-191.jpg');
+	background-position: center bottom;
+}
+#part5 {
+	background-image: url('../../images/shoes/wedding-foot-wear-close-up_1303-11599.jpg');
+	background-size: 70%;
+	background-position: top;
+}
+#part3 {
+	background-image: url('../../images/jewelry/diamond-couple-wedding-rings-is-placed-glass-there-are-nature-plant-is-decoration_74216-4.jpg');
+}
+#part2 {
+	background-image: url('../../images/beautiful-crystal-diadem-white-veil-bride-vintage-chair-wedding-ceremony_36615-373.jpg');
+	background-position: 50% 60%;
+	height: 200px;
+}
+#part4 {
+	background-image: url('../../images/bouquet/beautiful-stylish-wedding-bouquet-snow_1304-2753.jpg');
+}
+
+/*FEEDBACK*/ 
+.feedback {
+	width: 100%;
+	/*display: flex;*/
+	/*flex-wrap: wrap;*/
+}
+.feedback_item {
+	/*width: 25%;*/
+	height: 400px;
+	background-size: cover;
+	background-position: top center;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.name {
+	font-family: 'Dancing Script', cursive;
+	font-size: 25px;
+}
+.feedback_item p {
+	width: 100%;
+	text-align: center;
+	line-height: 1.2;
+	position: relative;
+	/*background-color: rgba(97, 63, 67, 0.5);*/
+	/*background-color: rgba(176, 134, 139, 0.6);*/
+	background-color: rgba(221, 221, 213, 0.6);
+	padding: 10px;
+}
+#feed2 {
+	background-image: url('../../images/light-veil-hides-tender-young-bride_8353-4463.jpg');
+	background-position: top right;
+}
+#feed3 {
+	background-image: url('../../images/mysterious-portrait-bride-hidden-veil_8353-7091.jpg');
+}
+#feed5 {
+	background-image: url('../../images/mysterious-portrait-bride-hidden-veil_8353-7096.jpg');
+	background-position: top left;
+}
+#feed8 {
+	background-image: url('../../images/portrait-charming-bride-enveloped-veil_8353-8130.jpg');
+	background-position: top right;
+}
+#feed9 {
+	background-image: url('../../images/portrait-stunning-blonde-bride-with-deep-eyes_8353-8045.jpg');
+	background-position: top right;
+}
+#feed10 {
+	background-image: url('../../images/pretty-shy-bride-with-veil-close-up-portrait-morning-before-wedding_8353-6143.jpg');
+	background-position: 22% 0%;
+}
+#feed11 {
+	background-image: url('../../images/stunning-bride-with-pink-hair-covered-with-light-veil_8353-1435.jpg');
+}
+#feed12 {
+	background-image: url('../../images/wedding-dresses-1486256_960_720.jpg');
+}
+
+
+/*PREVIEW*/
+.preview {
+	width: 100%;
+	display: flex;
+}
+.preview_item {
+	width: 50%;
+	background-color: #fafafa;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#preview1 {
+	height: 450px;
+	background-position: top;
+}
+#preview1 img {
+	object-position: 50% 20%;
+}
+.preview_item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.preview_item .title {
+	font-size: 35px;
+}
+.title {
+	font-size: 40px;
+	color: #5e3654;
+	text-align: center;
+}
+.preview .text {
+	width: 50%;
+    line-height: 1.5;
+	text-align: center;
+	margin-top: 30px;
+	color: #5e3654;
+}
+.preview .button {
+	background: none;
+	color: #5e3654;
+	border: 2px solid #5e3654;
+}
+.preview .button:hover {
+	background-color: #5e3654;
+	color: #fff;
+	transition: 0.8s;
+}
+/*BRANDS & GALLERY*/
+.brands, .gallery {
+	width: 100%;
+	display: flex;
+}
+.gallery {
+	position: relative;
+}
+.brands_item, .gallery_item {
+	width: 16.66%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.brands_item {
+	height: 100px;
+}
+.gallery_item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.gallery .text {
+	font-size: 30px;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 45%;	
+}
+
+
+/*FOOTER*/
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: rgba(176, 134, 139, 0.3);
+}
+.footer_item {
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin: 30px 30px 30px 0; 
+}
+#footer_item1 {
+	width: 30%;
+}
+.footer_item .text {
+	width: 85%;
+	line-height: 1.5;
+}
+.footer_item .logo {
+	margin: 20px 0;
+	font-size: 40px;
+}
+.logo_style {
+	font-family: 'Dancing Script', cursive;
+	font-size: 25px;
+}
+.footer_item .logo p {
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
+	/*color: #b0868b;*/
+	color: #5e3654;
+}
+.social {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 25px 0;
+}
+.social_item {
+	width: 40px;
+	height: 40px;
+	background-color: #eee;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+}
+.social_item img {
+	width: 20px;
+}
+
+.footer_title {
+	/*color: #b0868b;*/
+	color: #5e3654;
+	font-size:18px;
+	font-weight: 500;
+	margin: 20px 0 30px;
+}
+.footer_nav {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.footer_link {
+	font-size: 14px;
+	color: #5e3654;
+	margin-bottom: 15px;
+}
+@media (max-width: 1200px) {
+	#prev2 {
+		height: 430px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.category {
+		background-color: #eee5e6;
+	}
+	.category_item {
+		width: 28%;
+	    height: 400px;
+	}
+	.col1, .col2 {
+		width: 50%;
+	}
+	#part1 {
+	    height: 600px;
+	}
+	#part2 {
+	    order: 1;
+	    height: 150px;
+	}
+	#part5 {
+	    order: 2;
+	    height: 150px;
+	}
+	#part3 {
+	    order: 3;
+	    width: 100%;
+	    height: 150px;
+	}
+	#part4 {
+	    order: 4;
+	    width: 100%;
+	    height: 150px;
+	}
+}
+
+@media (max-width: 768px) {
+	.slider_item {
+		height: 550px;
+	}
+	.slider_content {
+		margin: 25% 3% 0 0;
+	}
+	.category_item {
+	    height: 330px;
+	}
+	.preview_item .title {
+	    font-size: 25px;
+	}
+	/*.col1, .col2 {
+		width: 50%;
+	}
+	#part1 {
+	    height: 600px;
+	}
+	#part2 {
+	    order: 1;
+	    height: 150px;
+	}
+	#part5 {
+	    order: 2;
+	    height: 150px;
+	}
+	#part3 {
+	    order: 3;
+	    width: 100%;
+	    height: 150px;
+	}
+	#part4 {
+	    order: 4;
+	    width: 100%;
+	    height: 150px;
+	}*/
+	
+	#prev1 {
+		padding: 40px;
+	}
+	.preview .text {
+		width: 80%;
+	}
+	.preview .button {
+		margin-top: 20px;
+	}
+	.part_title {
+		opacity: 1;
+		background: none;
+		outline-color: #fff;
+	}
+}
+
+@media (max-width: 480px) {
+	.header_nav {
+		display:none;
+	}
+	.header_nav_mobile {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: space-between;
+		position: absolute;
+		z-index:10;
+	}
+	.header_nav_mobile .header_top {
+		width: 100%;
+		justify-content: space-between;
+	}
+	.mobile_menu {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		margin-right: 30px;
+	}
+	.header_nav_mobile .header_bottom {
+		width: 100%;
+		background-color: rgba(176, 134, 139, 0.8);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		display:none;
+	}
+	.header_nav_mobile .nav_menu {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.header_nav_mobile .nav_menu .nav_link {
+		margin: 20px 10px;
+	}
+
+	.line {
+		width: 25px;
+		height: 2px;
+		background-color:#5e3654;
+		margin-bottom: 8px;
+	}
+	.mobile_close {
+		position: absolute;
+		top: 6%;
+		right: 7%;
+		/*align-self: flex-end;*/
+		/*margin: 20px 30px 30px;*/
+	}
+	.mobile_close .line:first-child {
+		transform: rotate(45deg);
+	}
+	.mobile_close .line:last-child {
+		transform: rotate(135deg);
+		position: absolute;
+		top:0;
+	}
+	.slider_item {
+		height: 500px;
+	}
+	#item1 {
+	    background-position: 10% 50%;
+	}
+	#item2 {
+		background-position: 45%;
+	}
+	#item3 {
+		background-position: 40%;
+	}
+	.slider_content {
+		width: 40%;
+		margin: 40% 0 0;
+	}
+	.slider_title {
+		font-size: 33px;
+	}
+	.preview {
+		flex-wrap: wrap;
+	}
+	.preview_item {
+		width: 100%;
+		padding: 30px;
+	}
+	#preview1 {
+		height: 350px;
+		padding: 0;
+	}
+	#prev2 {
+		padding: 0;
+	}
+	.col1, .col2 {
+		width: 100%;
+	}
+	#part1 {
+		height: 400px;
+		background-position: center;
+	}
+	.category_item {
+		width: 50%;
+
+	}
+	footer {
+		flex-wrap: wrap;
+	}
+	.footer_item {
+		width: 50%;
+		margin: 0;
+		padding: 20px 40px;
+	}
+	.footer_item .text {
+		width: 100%;
+	}
+	#footer_item1 {
+		width: 100%;
+		padding-bottom: 0;
+		
+	}
+}
+@media (max-width:425px) {
+
+	
+}
+@media (max-width:375px) {
+	.category_item {
+		width: 70%;
+		margin-bottom: 10px;
+	}
+
+}
+@media (max-width:320px) {
+	.slider_content {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		align-items: center;
+		text-align: center;
+		padding: 20px 10px;
+		background-color: rgba(176, 134, 139, 0.6);
+		background-color: rgba(255, 255, 255, 0.5);
+	}
+	.slider_title {
+		text-align: center;
+	}
+	#item2 {
+		background-position: 35% 50%;
+	}
+	#item3 {
+		background-position: 22% 50%;
+	}
+
+}
