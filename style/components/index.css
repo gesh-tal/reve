@@ -607,6 +607,7 @@ footer {
 	}
 	.header_nav_mobile .nav_menu .nav_link {
 		margin: 20px 10px;
+		text-shadow:none;
 	}
 
 	.line {
