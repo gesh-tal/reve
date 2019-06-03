@@ -15,7 +15,7 @@ $(document).ready(function(){
 		items:4,
 		loop:true,
 		dots:false,
-		// autoplay:true,
+		autoplay:true,
 		autoplayTimeout:6000,
 		autoplaySpeed:1000,
 		pagination:false,
