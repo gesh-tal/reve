@@ -419,6 +419,7 @@ footer {
 .footer_item .text {
 	width: 85%;
 	line-height: 1.5;
+	text-shadow:none;
 }
 .footer_item .logo {
 	margin: 20px 0;
